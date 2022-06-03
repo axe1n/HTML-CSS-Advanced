@@ -48,23 +48,19 @@ nav {
 
 .hmain-left-side {
     width: 50%;
-    background: url(img/header-left-back.png) center;
-    background-size: cover;
+}
+
+.men-parka-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .hmain-right-side {
     width: 50%;
     background: #F1E4E6;
 }
-
-/* .heading {
-    font-size: 2em;
-margin-block-start: 0.67em;
-margin-block-end: 0.67em;
-margin-inline-start: 0px;
-margin-inline-end: 0px;
-font-weight: bold;
-} */
 
 .tagline {
     margin: 335px 0 0 76px;
@@ -162,9 +158,8 @@ font-weight: bold;
         height: 370px;
     }
 
-    .hmain-left-side {
-        background: url(img/header-left-back.png) top;
-        background-size: cover;
+    .men-parka-img {
+        object-position: top;
     }
 
     .tagline {
