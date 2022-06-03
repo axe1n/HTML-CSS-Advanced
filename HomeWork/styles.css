@@ -15,7 +15,6 @@ header {
     margin: 0 auto;
 }
 
-
 nav {
     height: 74px;
     background: #222222;
@@ -58,6 +57,15 @@ nav {
     background: #F1E4E6;
 }
 
+/* .heading {
+    font-size: 2em;
+margin-block-start: 0.67em;
+margin-block-end: 0.67em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
+} */
+
 .tagline {
     margin: 335px 0 0 76px;
     border-left: 12px solid #F16D7F;
@@ -66,10 +74,11 @@ nav {
 
 .first-line {
     display: block;
+    margin-bottom: 15px;
     font-style: normal;
     font-weight: 900;
     font-size: 48px;
-    line-height: 58px;
+    line-height: 36px;
     color: #222222;
 }
 
@@ -78,7 +87,7 @@ nav {
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
-    line-height: 38px;
+    line-height: 26px;
     color: #222222;
 }
 
@@ -163,13 +172,14 @@ nav {
     }
 
     .first-line {
+        margin-bottom: 10px;
         font-size: 44px;
-        line-height: 53px;
+        line-height: 32px;
     }
 
     .second-line {
         font-size: 24px;
-        line-height: 29px;
+        line-height: 18px;
     }
 
     .container {
@@ -227,12 +237,12 @@ nav {
 
     .first-line {
         font-size: 38px;
-        line-height: 46px;
+        line-height: 28px;
     }
 
     .second-line {
         font-size: 20px;
-        line-height: 24px;
+        line-height: 16px;
     }
 
     .store-sections {
