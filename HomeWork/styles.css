@@ -152,6 +152,44 @@ nav {
     color: #FFFFFF;
 }
 
+.futuredGoods {
+    margin-top: 95px;
+    margin-bottom: 95px;
+}
+
+.futuredGoods > h2, span {
+    text-align: center;
+    display: block;
+}
+
+.futuredGoods > h2 {
+    margin-bottom: 6px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+}
+
+.futuredGoods > span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+
+.cards {
+    height: 1190px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card {
+    border: 1px solid #000;
+}
+
 @media (max-width: 1024px) {
     nav {
         padding: 18px 32px;
@@ -197,7 +235,6 @@ nav {
     .accesories {
         background-position: top;
     }
-
 }
 
 @media (max-width: 667px) {
