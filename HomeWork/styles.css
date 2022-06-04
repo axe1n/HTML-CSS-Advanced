@@ -60,10 +60,13 @@ nav {
 .hmain-right-side {
     width: 50%;
     background: #F1E4E6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .tagline {
-    margin: 335px 0 0 76px;
+    margin: 0 0 0 76px;
     border-left: 12px solid #F16D7F;
     padding-left: 16px;
 }
@@ -163,7 +166,7 @@ nav {
     }
 
     .tagline {
-        margin: 138px 0 0 40px;
+        margin: 0 0 0 40px;
     }
 
     .first-line {
@@ -220,9 +223,6 @@ nav {
 
     .hmain-right-side {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 
