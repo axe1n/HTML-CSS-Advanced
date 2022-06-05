@@ -157,12 +157,13 @@ nav {
     margin-bottom: 95px;
 }
 
-.futuredGoods > h2, span {
+.futuredGoods>h2,
+span {
     text-align: center;
     display: block;
 }
 
-.futuredGoods > h2 {
+.futuredGoods>h2 {
     margin-bottom: 6px;
     font-weight: 400;
     font-size: 30px;
@@ -170,7 +171,7 @@ nav {
     color: #222222;
 }
 
-.futuredGoods > span {
+.futuredGoods>span {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
