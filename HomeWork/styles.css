@@ -152,14 +152,11 @@ header {
 }
 
 .futuredGoods {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin-top: 95px;
     margin-bottom: 95px;
-}
-
-.futuredGoods>h2,
-.futuredGoods>span {
-    text-align: center;
-    display: block;
 }
 
 .futuredGoods>h2 {
@@ -179,15 +176,56 @@ header {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 580px);
+    grid-template-columns: repeat(3, 380px);
+    grid-template-rows: 580px;
     grid-gap: 30px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
 .card {
-    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-description{
+    margin: 25px 16px 20px;
+}
+
+.card-description>h2 {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.card-description>p {
+    margin-top: 12px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+}
+
+.card-price {
+    display: inline-block;
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
+.all-prod-button {
+    align-self: center;
+    padding: 15px 40px;
+    border: 1px solid #FF6A6A;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
 }
 
 @media (max-width: 1024px) {
@@ -234,6 +272,13 @@ header {
     .for-kids,
     .accesories {
         background-position: top;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 380px);
+        grid-gap: 16px;
+        margin-top: 72px;
+        margin-bottom: 32px;
     }
 }
 
@@ -287,5 +332,13 @@ header {
     .accesories {
         grid-column: 1/2;
         grid-row: 4/5;
+    }
+
+    .cards {
+        grid-template-columns: 380px;
+        grid-template-rows: 580px; 
+        grid-gap: 16px;
+        margin-top: 65px;
+        margin-bottom: 40px;
     }
 }
