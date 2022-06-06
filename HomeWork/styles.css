@@ -15,13 +15,13 @@ header {
     margin: 0 auto;
 }
 
-nav {
+.menu {
     height: 74px;
     background: #222222;
     padding: 18px 0;
 }
 
-.nav-wrapp {
+.menu-wrapp {
     max-width: 1140px;
     margin: 0 auto;
     display: flex;
@@ -29,13 +29,13 @@ nav {
     align-items: center;
 }
 
-.nav__left-side {
+.menu__left-side {
     width: 111px;
     display: flex;
     justify-content: space-between;
 }
 
-.nav__right-side {
+.menu__right-side {
     width: 169px;
     display: flex;
     justify-content: space-between;
@@ -109,11 +109,10 @@ nav {
 }
 
 .store-sections {
-    height: 470px;
     margin-top: 64px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 0.5fr;
+    grid-template-rows: 260px 180px;
     grid-gap: 30px;
 }
 
@@ -179,9 +178,9 @@ nav {
 }
 
 .cards {
-    height: 1190px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 580px);
     grid-gap: 30px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -192,7 +191,7 @@ nav {
 }
 
 @media (max-width: 1024px) {
-    nav {
+    .menu {
         padding: 18px 32px;
     }
 
@@ -225,7 +224,7 @@ nav {
     }
 
     .store-sections {
-        height: 300px;
+        grid-template-rows: 170px 120px;
         margin-top: 20px;
         grid-gap: 20px;
     }
@@ -239,7 +238,7 @@ nav {
 }
 
 @media (max-width: 667px) {
-    nav {
+    .menu {
         padding: 18px 16px;
     }
 
@@ -251,7 +250,7 @@ nav {
         display: none;
     }
 
-    .nav__right-side {
+    .menu__right-side {
         justify-content: flex-end;
     }
 
@@ -279,10 +278,9 @@ nav {
     }
 
     .store-sections {
-        height: 965px;
         margin-top: 64px;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 0.5fr;
+        grid-template-rows: repeat(3, 250px) 110px;
         grid-gap: 30px;
     }
 
