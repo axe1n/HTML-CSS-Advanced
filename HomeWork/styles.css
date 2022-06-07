@@ -60,9 +60,8 @@ header {
 .hmain-right-side {
     width: 50%;
     background: #F1E4E6;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    align-items: center;
 }
 
 .tagline {
@@ -99,7 +98,6 @@ header {
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    text-align: center;
     color: #F16D7F;
 }
 
@@ -138,10 +136,8 @@ header {
 .for-men,
 .for-kids,
 .accesories {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    align-content: center;
     background-position: center;
     background-size: cover;
     font-weight: 400;
@@ -152,9 +148,9 @@ header {
 }
 
 .futuredGoods {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
     margin-top: 95px;
     margin-bottom: 95px;
 }
@@ -184,19 +180,17 @@ header {
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    justify-items: center;
+    background: #F8F8F8;
 }
 
 .card-image {
-    /* width: 100%;
-    height: 100%; */
-    /* object-fit: cover;
-    object-position: center; */
+    width: 100%;
+    height: 420px;
 }
 
-.card-description{
+.card-description {
     margin: 25px 16px 20px;
 }
 
@@ -316,7 +310,7 @@ header {
 
     .hmain-right-side {
         width: 100%;
-        align-items: center;
+        justify-items: center;
     }
 
     .tagline {
@@ -347,7 +341,7 @@ header {
 
     .cards {
         grid-template-columns: 380px;
-        grid-template-rows: 580px; 
+        grid-template-rows: 580px;
         grid-gap: 16px;
         margin-top: 65px;
         margin-bottom: 40px;
