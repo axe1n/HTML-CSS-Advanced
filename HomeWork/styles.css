@@ -41,6 +41,27 @@ nav {
     justify-content: space-between;
 }
 
+.cartIconWrap {
+    position: relative;
+}
+
+.cartCounter {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    padding-top: 2.5px;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #F16D7F;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
 .header-main {
     height: 765px;
     display: flex;
@@ -243,10 +264,7 @@ nav {
         padding: 18px 16px;
     }
 
-    .cart-icon {
-        display: none;
-    }
-
+    .cartIconWrap,
     .user-icon {
         display: none;
     }
