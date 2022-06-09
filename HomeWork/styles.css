@@ -41,6 +41,27 @@ header {
     justify-content: space-between;
 }
 
+.cartIconWrap {
+    position: relative;
+}
+
+.cartCounter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #F16D7F;
+    border-radius: 50%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
 .header-main {
     height: 765px;
     display: flex;
@@ -292,10 +313,7 @@ header {
         padding: 18px 16px;
     }
 
-    .cart-icon {
-        display: none;
-    }
-
+    .cartIconWrap,
     .user-icon {
         display: none;
     }
