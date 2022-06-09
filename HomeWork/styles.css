@@ -159,9 +159,7 @@ header {
     margin-top: 64px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: 260px 180px;
     grid-template-rows: 260px 180px;
     grid-gap: 30px;
 }
@@ -234,9 +232,9 @@ header {
 .cards {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (380px)[3];
+
     grid-template-columns: repeat(3, 380px);
-    -ms-grid-rows: 580px;
+
     grid-template-rows: 580px;
     grid-gap: 30px;
     margin-top: 50px;
@@ -345,15 +343,10 @@ header {
     }
 
     .cards {
-        -ms-grid-columns: (380px)[2];
         grid-template-columns: repeat(2, 380px);
         grid-gap: 16px;
         margin-top: 72px;
         margin-bottom: 32px;
-    }
-
-    .card-image {
-        /* object-position: top; */
     }
 }
 
@@ -398,9 +391,7 @@ header {
 
     .store-sections {
         margin-top: 64px;
-        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        -ms-grid-rows: (250px)[3] 110px;
         grid-template-rows: repeat(3, 250px) 110px;
         grid-gap: 30px;
     }
@@ -426,21 +417,3 @@ header {
 }
 
 /*# sourceMappingURL=styles.css.map */
-plate-columns: 1fr;
-grid-template-rows: repeat(3, 250px) 110px;
-grid-gap: 30px;
-}
-
-.accesories {
-    grid-column: 1/2;
-    grid-row: 4/5;
-}
-
-.cards {
-    grid-template-columns: 380px;
-    grid-template-rows: 580px;
-    grid-gap: 16px;
-    margin-top: 65px;
-    margin-bottom: 40px;
-}
-}
