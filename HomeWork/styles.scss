@@ -8,6 +8,13 @@
 
 body {
     font-family: "Lato", sans-serif;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.wrapper {
+ 
 }
 
 header {
@@ -193,7 +200,7 @@ header {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(3, 380px);
+    grid-template-columns: repeat(3, 360px);
     grid-template-rows: 580px;
     grid-gap: 30px;
     margin-top: 50px;
@@ -249,6 +256,45 @@ header {
     line-height: 19px;
     color: #F26376;
 }
+
+.footer-top-back {
+    height: 340px;
+    background: #222224;
+}
+
+.footer-top {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .delivery {
+        width: 360px;
+        height: 134px;
+        display: grid;
+        justify-items: center;
+        align-content: space-between;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        & h3 {
+            font-weight: 400;
+            font-size: 19.96px;
+            line-height: 24px;
+            color: #FBFBFB;
+        }
+
+        & p {
+            font-weight: 300;
+            font-size: 13.972px;
+            line-height: 17px;
+            text-align: center;
+            color: #FBFBFB;
+        }
+    }
+}
+
+
 
 @media (max-width: 1024px) {
     .menu {
