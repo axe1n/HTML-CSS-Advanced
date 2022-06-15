@@ -295,6 +295,73 @@ header {
 }
 
 
+.footer-middle-back {
+    height: 448px;
+    background: url(img/footter-bottom-back.png);
+}
+
+.footer-middle {
+  height: inherit;
+  display: flex;
+
+  .fm-left, .fm-right {
+      width: 50%;
+      text-align: center;
+  }
+
+  .fm-left {
+      padding: 97px 223px 126px 0px;
+
+      & img {
+          margin-bottom: 30px;
+      }
+
+      & p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #222224;
+      }
+  }
+
+    .fm-right {
+        width: 557px;
+        padding: 150px 0 156px 0;
+
+        & H3 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 167.2%;
+            text-align: center;
+            color: #222224;
+        }
+        
+        & span {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 167.2%;
+            text-align: center;
+            color: #222224;
+        }
+    }  
+
+    .subscribe {
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+
+        & .email {
+            border-top-left-radius: 25%;
+            border-bottom-left-radius: 25%;
+        }
+    }
+}
+
+.footer-bottom-back {
+    height: 80px;
+    background: #222224;
+}
 
 @media (max-width: 1024px) {
     .menu {
