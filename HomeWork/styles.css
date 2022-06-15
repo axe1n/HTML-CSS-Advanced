@@ -420,7 +420,7 @@ header {
   color: #222224;
 }
 
-.footer-middle .subscribe {
+.footer-middle .subscribe-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -430,7 +430,7 @@ header {
   margin-top: 32px;
 }
 
-.footer-middle .subscribe .email {
+.footer-middle .subscribe-form .email {
   height: 50px;
   width: 256px;
   padding: 7px 25px;
@@ -440,7 +440,7 @@ header {
   border-bottom-left-radius: 25px;
 }
 
-.footer-middle .subscribe .email ::-webkit-input-placeholder {
+.footer-middle .subscribe-form .email ::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -448,7 +448,7 @@ header {
   opacity: 0.67;
 }
 
-.footer-middle .subscribe .email :-ms-input-placeholder {
+.footer-middle .subscribe-form .email :-ms-input-placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -456,7 +456,7 @@ header {
   opacity: 0.67;
 }
 
-.footer-middle .subscribe .email ::-ms-input-placeholder {
+.footer-middle .subscribe-form .email ::-ms-input-placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -464,7 +464,7 @@ header {
   opacity: 0.67;
 }
 
-.footer-middle .subscribe .email ::placeholder {
+.footer-middle .subscribe-form .email ::placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -472,7 +472,7 @@ header {
   opacity: 0.67;
 }
 
-.footer-middle .subscribe .subscribeButton {
+.footer-middle .subscribe-form .subscribeButton {
   height: 50px;
   width: 100px;
   background: #F16D7F;
@@ -483,6 +483,7 @@ header {
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .footer-bottom-back {
@@ -592,8 +593,8 @@ header {
     background-position: top;
   }
   .cards {
-    -ms-grid-columns: (380px)[2];
-        grid-template-columns: repeat(2, 380px);
+    -ms-grid-columns: (360px)[2];
+        grid-template-columns: repeat(2, 360px);
     grid-gap: 16px;
     margin-top: 72px;
     margin-bottom: 32px;
@@ -637,6 +638,10 @@ header {
 }
 
 @media (max-width: 667px) {
+  .container {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
   .menu {
     padding: 18px 16px;
   }
@@ -684,8 +689,8 @@ header {
     grid-row: 4/5;
   }
   .cards {
-    -ms-grid-columns: 380px;
-        grid-template-columns: 380px;
+    -ms-grid-columns: 360px;
+        grid-template-columns: 360px;
     -ms-grid-rows: 580px;
         grid-template-rows: 580px;
     grid-gap: 16px;
@@ -701,12 +706,40 @@ header {
     grid-gap: 46px;
   }
   .footer-middle-back {
-    height: 510px;
+    height: 554px;
+    background-position: left;
   }
   .footer-middle {
     grid-gap: 59px;
     padding-top: 64px;
     padding-bottom: 110px;
+  }
+  .footer-middle .fm-left {
+    width: 343px;
+  }
+  .footer-middle .fm-left p {
+    font-size: 18px;
+    line-height: 22px;
+    color: #222224;
+  }
+  .footer-middle .fm-right {
+    width: 341px;
+  }
+  .footer-middle .fm-right H3 {
+    line-height: 153.2%;
+  }
+  .footer-middle .fm-right span {
+    font-size: 14px;
+    line-height: 153.2%;
+  }
+  .footer-middle .subscribe-form {
+    margin-top: 22px;
+  }
+  .footer-middle .subscribe-form .email {
+    width: 245px;
+  }
+  .footer-middle .subscribe-form .subscribeButton {
+    width: 95px;
   }
   .footer-bottom-back {
     height: 140px;
