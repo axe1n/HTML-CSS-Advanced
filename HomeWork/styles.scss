@@ -13,10 +13,8 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
-.wrapper {}
-
 header {
-    max-width: 1600px;
+    // max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -79,6 +77,8 @@ header {
 
 .header-main {
     height: 765px;
+    max-width: 1600px;
+    margin: 0 auto;
     display: flex;
 }
 
