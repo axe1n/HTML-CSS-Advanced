@@ -13,9 +13,7 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
-.wrapper {
- 
-}
+.wrapper {}
 
 header {
     max-width: 1600px;
@@ -40,12 +38,22 @@ header {
     width: 111px;
     display: flex;
     justify-content: space-between;
+
+    & a {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .menu__right-side {
     width: 169px;
     display: flex;
     justify-content: space-between;
+
+    & a {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .cartIconWrap {
@@ -298,32 +306,35 @@ header {
 .footer-middle-back {
     height: 448px;
     background: url(img/footter-bottom-back.png);
+    background-size: cover;
+    background-position: center
 }
 
 .footer-middle {
-  height: inherit;
-  display: flex;
+    height: inherit;
+    display: flex;
 
-  .fm-left, .fm-right {
-      width: 50%;
-      text-align: center;
-  }
-
-  .fm-left {
-      padding: 97px 223px 126px 0px;
-
-      & img {
-          margin-bottom: 30px;
-      }
-
-      & p {
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 24px;
+    .fm-left,
+    .fm-right {
+        width: 50%;
         text-align: center;
-        color: #222224;
-      }
-  }
+    }
+
+    .fm-left {
+        padding: 97px 223px 126px 0px;
+
+        & img {
+            margin-bottom: 30px;
+        }
+
+        & p {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #222224;
+        }
+    }
 
     .fm-right {
         width: 557px;
@@ -336,7 +347,7 @@ header {
             text-align: center;
             color: #222224;
         }
-        
+
         & span {
             font-weight: 400;
             font-size: 18px;
@@ -344,7 +355,7 @@ header {
             text-align: center;
             color: #222224;
         }
-    }  
+    }
 
     .subscribe {
         display: flex;
@@ -352,8 +363,34 @@ header {
         margin-top: 32px;
 
         & .email {
-            border-top-left-radius: 25%;
-            border-bottom-left-radius: 25%;
+            height: 50px;
+            width: 256px;
+            padding: 7px 25px;
+            background: #E1E1E1;
+            border: none;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+
+            & ::placeholder {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #222224;
+                opacity: 0.67;
+            }
+        }
+
+        & .subscribeButton {
+            height: 50px;
+            width: 100px;
+            background: #F16D7F;
+            border: none;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
         }
     }
 }
@@ -361,6 +398,44 @@ header {
 .footer-bottom-back {
     height: 80px;
     background: #222224;
+}
+
+.footer-bottom {
+    height: inherit;
+    display: flex;
+
+    & .copyright,
+    .social-media-wrapper {
+        width: 50%;
+    }
+
+    & .copyright {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FBFBFB;
+    }
+
+    & .social-media-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        & .social-media {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 150px;
+
+            & a {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
 }
 
 @media (max-width: 1024px) {
@@ -415,6 +490,44 @@ header {
         margin-top: 72px;
         margin-bottom: 32px;
     }
+
+    .futuredGoods {
+        margin-bottom: 65px;
+    }
+
+    .footer-top-back {
+        height: 610px;
+    }
+
+    .footer-top {
+        display: grid;
+        padding-top: 48px;
+        padding-bottom: 64px;
+        justify-content: center;
+        align-content: center;
+        grid-gap: 48px;
+    }
+
+    .footer-middle-back {
+        height: 610px;
+    }
+
+    .footer-middle {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-gap: 48px;
+        padding-top: 64px;
+        padding-bottom: 140px;
+
+        & .fm-left,
+        .fm-right {
+            padding: 0 0 0 0;
+        }
+
+
+    }
+
 }
 
 @media (max-width: 667px) {
@@ -473,4 +586,49 @@ header {
         margin-top: 65px;
         margin-bottom: 40px;
     }
+
+    .futuredGoods {
+        margin-bottom: 96px;
+    }
+
+    .footer-top {
+        padding-top: 48px;
+        padding-bottom: 81px;
+        grid-gap: 46px;
+    }
+
+    .footer-middle-back {
+        height: 510px;
+    }
+
+    .footer-middle {
+        grid-gap: 59px;
+        padding-top: 64px;
+        padding-bottom: 110px;
+    }
+
+    .footer-bottom-back {
+        height: 140px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 43px 0 9px 0;
+        justify-content: space-between;
+
+        & .copyright,
+        .social-media-wrapper {
+            width: 100%;
+        }
+
+        & .copyright {
+            justify-content: center;
+        }
+
+        & .social-media-wrapper {
+            justify-content: center;
+        }
+    }
+
 }
