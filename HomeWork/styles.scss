@@ -316,7 +316,7 @@ main {
     height: 448px;
     background: url(img/footter-bottom-back.png);
     background-size: cover;
-    background-position: center
+    background-position: center;
 }
 
 .footer-middle {
@@ -566,7 +566,6 @@ main {
         padding: 15px;
         display: flex;
         list-style: none;
-        display: flex;
         justify-content: space-between;
         border: 1px solid #EBEBEB;
         border-radius: 3px;
@@ -763,18 +762,6 @@ main {
         margin-bottom: 40px;
     }
 
-    .main-middle {
-        .catalog-cards {
-            grid-template-columns: 360px;
-            grid-template-rows: 580px;
-            grid-gap: 16px;
-
-            .card:nth-child(3) {
-                display: none;
-            }
-        }
-    }
-
     .futuredGoods {
         margin-bottom: 96px;
     }
@@ -789,6 +776,16 @@ main {
     }
 
     .main-middle {
+        .catalog-cards {
+            grid-template-columns: 360px;
+            grid-template-rows: 580px;
+            grid-gap: 16px;
+
+            .card:nth-child(3) {
+                display: none;
+            }
+        }
+
         .filter-wrapper {
             .filter {
                 display: none;
