@@ -7,6 +7,23 @@
     box-sizing: border-box;
 }
 
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
 }
@@ -151,6 +168,11 @@ main {
     margin: 0 auto;
 }
 
+.card-product__container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 .store-sections {
     margin-top: 64px;
     display: grid;
@@ -272,6 +294,24 @@ main {
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
+}
+
+.add-to-cart-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 212px;
+    padding: 15px 0 15px 0;
+    border: 1px #FF6A6A solid;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+
+    img {
+        margin-right: 23px;
+    }
+
 }
 
 .footer-top-back {
@@ -501,6 +541,27 @@ main {
     content: '';
 }
 
+.filter-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+
+    span {
+        margin-right: 28px;
+    }
+
+    span:nth-child(3) {
+        margin-right: 0;
+    }
+
+    span::after {
+        content: url(img/details-filter.svg);
+        margin-left: 10px;
+    }
+}
+
+
 .main-middle {
     .filter-wrapper {
         width: 690px;
@@ -525,24 +586,10 @@ main {
             display: none;
         }
 
-
         .details-filter {
-            width: 300px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-
-            span {
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 17px;
-                color: #6F6E6E;
-
-                &::after {
-                    content: url(img/details-filter.svg);
-                    margin-left: 10px;
-                }
-            }
         }
     }
 
@@ -552,6 +599,88 @@ main {
         grid-template-rows: 580px;
         grid-gap: 30px;
         justify-content: center;
+    }
+
+    .slider {
+        height: 777px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px #EAEAEA solid;
+        background: #F7F7F7;
+
+        &>img {
+            min-height: 71%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .card-product {
+        display: grid;
+        justify-items: center;
+        padding: 65px 0 65px 0;
+        background: white;
+        border: 1px #EAEAEA solid;
+        text-align: center;
+
+        .card-product__description {
+            padding: 0 43px 65px 43px;
+
+            h2 {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color: #F16D7F;
+
+            }
+
+            .strip {
+                display: inline-block;
+                margin-top: 12px;
+                width: 63px;
+                border-top: 3px solid #EF5B70;
+
+            }
+
+            h3 {
+                margin-top: 12px;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 22px;
+                color: #4D4D4D;
+            }
+
+            p {
+                margin-top: 48px;
+                padding: 0 293px;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color: #5E5E5E;
+
+            }
+
+            .card-product__price {
+                margin-top: 32px;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 29px;
+                color: #EF5B70;
+
+            }
+        }
+
+        .strip {
+            display: inline-block;
+            width: 642px;
+            border-top: 1px solid #EAEAEA;
+        }
+
+        .card-product__filter {
+            margin-top: 65px;
+            margin-bottom: 48px;
+        }
     }
 }
 
@@ -588,6 +717,17 @@ main {
         color: #EF5B70;
     }
 }
+
+.products-cards {
+    margin-top: 80px;
+    margin-bottom: 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: 580px;
+    grid-gap: 30px;
+    justify-content: center;
+}
+
 
 @media (max-width: 1024px) {
     .menu {
@@ -647,6 +787,17 @@ main {
     }
 
     .main-middle {
+        .card-product {
+            .card-product__description {
+                padding: 0 0 65px 0;
+
+                p {
+                    padding: 0 106.5px;
+
+                }
+            }
+        }
+
         .filter-wrapper {
             width: auto;
             margin-top: 24px;
@@ -660,6 +811,15 @@ main {
             .card:nth-child(3) {
                 display: none;
             }
+        }
+    }
+
+    .products-cards {
+        grid-template-columns: repeat(2, 360px);
+        grid-gap: 16px;
+
+        .card:nth-child(3) {
+            display: none;
         }
     }
 
@@ -704,6 +864,10 @@ main {
     .container {
         margin-left: 8px;
         margin-right: 8px;
+    }
+
+    .card-product__container {
+        max-width: 100vh;
     }
 
     .menu {
@@ -776,6 +940,31 @@ main {
     }
 
     .main-middle {
+        .card-product {
+
+            .card-product__filter {
+                margin-bottom: 65px;
+            }
+
+            .strip {
+                width: 175px;
+            }
+
+            .card-product__description {
+                p {
+                    line-height: 143.1%;
+                    padding: 0 25px;
+                }
+
+            }
+        }
+
+        .slider {
+            &>img {
+                min-width: 75%;
+            }
+        }
+
         .catalog-cards {
             grid-template-columns: 360px;
             grid-template-rows: 580px;
@@ -806,7 +995,13 @@ main {
         }
     }
 
-
+    .products-cards {
+        grid-template-columns: 360px;
+        grid-template-rows: 580px;
+        grid-gap: 16px;
+        margin-top: 25px;
+        margin-bottom: 0;
+    }
 
     .footer-top {
         padding-top: 48px;
@@ -860,6 +1055,11 @@ main {
             }
 
         }
+    }
+
+    .filter-text {
+        font-size: 10px;
+        line-height: 12px;
     }
 
     .footer-bottom-back {
