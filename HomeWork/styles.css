@@ -381,6 +381,13 @@ main {
   margin-right: 23px;
 }
 
+.cart-main-bottom {
+  height: 774px;
+  border: 1px solid #000;
+  margin-top: 96px;
+  margin-bottom: 128px;
+}
+
 .footer-top-back {
   height: 340px;
   background: #222224;
@@ -775,6 +782,7 @@ main {
 
 .main-middle .slider > img {
   min-height: 71%;
+  max-height: 89%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;

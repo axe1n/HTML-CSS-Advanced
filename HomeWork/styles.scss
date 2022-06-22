@@ -314,6 +314,13 @@ main {
 
 }
 
+.cart-main-bottom {
+    height: 774px;
+    border: 1px solid #000;
+    margin-top: 96px;
+    margin-bottom: 128px;
+}
+
 .footer-top-back {
     height: 340px;
     background: #222224;
@@ -617,6 +624,7 @@ main {
 
         &>img {
             min-height: 71%;
+            max-height: 89%;
             object-fit: cover;
             object-position: center;
         }
