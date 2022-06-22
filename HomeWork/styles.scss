@@ -562,6 +562,10 @@ main {
 }
 
 
+.cardProduct__wrapper {
+    margin: 0 auto;
+}
+
 .main-middle {
     .filter-wrapper {
         width: 690px;
@@ -608,6 +612,8 @@ main {
         align-items: center;
         border: 1px #EAEAEA solid;
         background: #F7F7F7;
+        position: relative;
+        z-index: 1;
 
         &>img {
             min-height: 71%;
@@ -623,6 +629,10 @@ main {
         background: white;
         border: 1px #EAEAEA solid;
         text-align: center;
+        margin-top: -98px;
+        position: relative;
+        z-index: 2;
+
 
         .card-product__description {
             padding: 0 43px 65px 43px;
@@ -788,6 +798,10 @@ main {
 
     .main-middle {
         .card-product {
+            margin-top: 0;
+            position: static;
+            z-index: auto;
+
             .card-product__description {
                 padding: 0 0 65px 0;
 
@@ -802,6 +816,11 @@ main {
             width: auto;
             margin-top: 24px;
             margin-bottom: 40px;
+        }
+
+        .slider {
+            position: static;
+            z-index: auto;
         }
 
         .catalog-cards {
