@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Product</title>
+    <title>Registration</title>
 </head>
 
 <body>
@@ -64,103 +64,50 @@
         </header>
         <main>
             <div class="main-top-wrapper">
-                <div class="main-top container">
-                    <h1>NEW ARRIVALS</h1>
-                    <nav>
-                        <ul class="new-arrivals breadcrumbs">
-                            <li><a href="index.html">HOME</a></li>
-                            <li><a href="#">MEN</a></li>
-                            <li>NEW ARRIVALS</li>
-                        </ul>
-                    </nav>
+                <div class="main-top main-top-flex container">
+                    <h1>REGISTRATION</h1>
                 </div>
             </div>
-            <div class="main-middle">
-                <div class="slider">
-                    <a href="#"><img src="img/previously-slide.svg" alt="previously slide"></a>
-                    <img src="img/woman.png" alt="woman">
-                    <a href="#"><img src="img/next-slide.svg" alt="next slide"></a>
-                </div>
-                <div class="card-product card-product__container">
-                    <div class="card-product__description">
-                        <h2>WOMEN COLLECTION</h2>
-                        <span class="strip"></span>
-                        <h3>MOSCHINO CHEAP AND CHIC</h3>
-                        <p>Compellingly actualize fully researched processes before proactive outsourcing.
-                            Progressively syndicate collaborative architectures before cutting-edge services.
-                            Completely visualize parallel core competencies rather than exceptional portals.</p>
-                        <p class="card-product__price">$561</p>
+            <div class="registration-main-bottom container">
+                <div class="registration-main-bottom-left">
+                    <div class="b-inputForm">
+                        <form class="b-inputForm__form" action="#">
+                            <h3 class="b-inputForm__headerReg">Your Name</h3>
+                            <input class="b-inputForm__input" type="text" name="name" value="" placeholder="First Name">
+                            <input class="b-inputForm__input" type="text" name="surname" value=""
+                                placeholder="Last Name">
+                            <div class="b-inputForm__sex b-inputForm__sex_marginTopBottom">
+                                <label class="b-inputForm__label"><input type="radio" name="sex">Male</label>
+                                <label class="b-inputForm__label"><input type="radio" name="sex">Female</label>
+                            </div>
+                            <h3 class="b-inputForm__headerReg">Login details</h3>
+                            <input class="b-inputForm__input" type="email" name="email" value="" placeholder="Email">
+                            <input class="b-inputForm__input" type="password" name="password" value=""
+                                placeholder="Password">
+                            <p class="b-inputForm__passwordReq">Please use 8 or more characters, with at least 1 number
+                                and a
+                                mixture of uppercase and lowercase letters</p>
+                            <a class="b-inputForm__anotherSubmit" href="#">
+                                JOIN NOW
+                                <img src="img/anotherArrow.svg" alt="arrow">
+                            </a>
+                        </form>
                     </div>
-                    <span class="strip"></span>
-                    <div class="filter-text card-product__filter">
-                        <span>CHOOSE COLOR</span>
-                        <span>CHOOSE SIZE </span>
-                        <span>QUANTITY</span>
-                    </div>
-                    <a class="add-to-cart-button" href="#">
-                        <img src="img/icon-cart-btn.svg" alt="cart">
-                        Add to Cart
-                    </a>
+                </div>
+                <div class="registration-main-bottom-right">
+                    <h2>LOYALTY HAS ITS PERKS</h2>
+                    <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with
+                        these as soon as you join:</p>
+                    <ul>
+                        <li>15% off welcome offer</li>
+                        <li>Free shipping, returns and exchanges on all orders</li>
+                        <li>$10 off a purchase on your birthday</li>
+                        <li>Early access to products</li>
+                        <li>Exclusive offers & rewards</li>
+                    </ul>
                 </div>
             </div>
-            <div class="main-bottom">
-                <div class="products-cards">
-                    <article class="card">
-                        <img class="card-image" src="img/card-4.png" alt="item 4">
-                        <div class="card-blackout">
-                            <a class="add-to-cart-button add-to-cart-button_white" href="#">
-                                <img src="img/icon-white-cart-btn.svg" alt="cart">
-                                Add to Cart
-                            </a>
-                        </div>
-                        <div class="card-description">
-                            <h2>ELLERY X M'O CAPSULE</h2>
-                            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
-                                Kym
-                                Ellery teams up with Moda Operandi.</p>
-                            <span class="card-price">
-                                $52.00
-                            </span>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <img class="card-image" src="img/card-3.png" alt="item 3">
-                        <div class="card-blackout">
-                            <a class="add-to-cart-button add-to-cart-button_white" href="#">
-                                <img src="img/icon-white-cart-btn.svg" alt="cart">
-                                Add to Cart
-                            </a>
-                        </div>
-                        <div class="card-description">
-                            <h2>ELLERY X M'O CAPSULE</h2>
-                            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
-                                Kym
-                                Ellery teams up with Moda Operandi.</p>
-                            <span class="card-price">
-                                $52.00
-                            </span>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <img class="card-image" src="img/card-6.png" alt="item 6">
-                        <div class="card-blackout">
-                            <a class="add-to-cart-button add-to-cart-button_white" href="#">
-                                <img src="img/icon-white-cart-btn.svg" alt="cart">
-                                Add to Cart
-                            </a>
-                        </div>
-                        <div class="card-description">
-                            <h2>ELLERY X M'O CAPSULE</h2>
-                            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
-                                Kym
-                                Ellery teams up with Moda Operandi.</p>
-                            <span class="card-price">
-                                $52.00
-                            </span>
-                        </div>
-                    </article>
-                </div>
-            </div>
+
         </main>
     </div>
     <footer class="footer">

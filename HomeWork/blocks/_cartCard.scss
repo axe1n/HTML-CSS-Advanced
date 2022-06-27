@@ -10,7 +10,7 @@
         width: 390px;
         display: flex;
         justify-content: space-between;
-        margin: 22px 22px 22px 31px;
+        margin: 22px 22px 62px 31px;
     }
 
     &__image {
@@ -62,7 +62,13 @@
 @media (max-width: 1024px) {
     .b-cartCard {
         width: 734px;
+
+        &__innerWrapper {
+            width: 472px;
+        }
     }
+
+
 }
 
 @media (max-width: 667px) {

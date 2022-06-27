@@ -20,12 +20,45 @@
                     </div>
                     <div class="menu__right-side">
                         <a href="#"><img class="menu-icon" src="img/menu-burger.svg" alt="menu"></a>
-                        <a href="#"><img class="user-icon" src="img/user.svg" alt="user"></a>
+                        <a href="registration.html"><img class="user-icon" src="img/user.svg" alt="user"></a>
                         <a href="cart.html"><span class="cartIconWrap"> <img class="cart-icon" src="img/cart.svg"
                                     alt="cart">
                                 <span class="cartCounter">5</span>
                             </span></a>
                     </div>
+                    <nav class="menu__hidden">
+                        <div class="menu__close"><img src="img/icon-delete.svg" alt="close menu"></div>
+                        <h2>MENU</h2>
+                        <ul>
+                            <li><a class="menu__mainCat" href="#">MAN</a>
+                                <ul>
+                                    <li><a class="menu__secondaryCat" href="#">Accessories</a></li>
+                                    <li><a class="menu__secondaryCat" href="#">Bags</a></li>
+                                    <li><a class="menu__secondaryCat" href="#">Denim</a></li>
+                                    <li><a class="menu__secondaryCat" href="#">T-Shirts</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="menu__mainCat" href="#">WOMAN</a>
+                                <ul>
+                                    <li><a class="menu__secondaryCat" href="#">Accessories</a></li>
+                                    <li><a class="menu__secondaryCat" href="#">Jackets & Coats</a></li>
+                                    <li><a class="menu__secondaryCat" href="#">Polos</a></li>
+                                    <li><a class="menu__secondaryCat" href="#">T-Shirts</a></li>
+                                    <li><a class="menu__secondaryCat" href="#">Shirts</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="menu__mainCat" href="#">KIDS</a>
+                                <ul>
+                                    <li><a class="menu__secondaryCat" href="#">Accessories</a></li>
+                                    <li><a class="menu__secondaryCat" href="#">Jackets & Coats</a></li>
+                                    <li><a class="menu__secondaryCat" href="#">Polos</a></li>
+                                    <li><a class="menu__secondaryCat" href="#">T-Shirts</a></li>
+                                    <li><a class="menu__secondaryCat" href="#">Shirts</a></li>
+                                    <li><a class="menu__secondaryCat" href="#">Bags</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </nav>
         </header>
@@ -50,7 +83,7 @@
                                         <p>Quantity: <span class="b-cartCard__qty">2</span></p>
                                     </div>
                                     <div class="b-cartCard__delete-card">
-                                        <img src="img/icon-cart-card-delete.svg" alt="delete item">
+                                        <img src="img/icon-delete.svg" alt="delete item">
                                     </div>
                                 </div>
                             </div>
@@ -67,7 +100,7 @@
                                         <p>Quantity: <span class="b-cartCard__qty">2</span></p>
                                     </div>
                                     <div class="b-cartCard__delete-card">
-                                        <img src="img/icon-cart-card-delete.svg" alt="delete item">
+                                        <img src="img/icon-delete.svg" alt="delete item">
                                     </div>
                                 </div>
                             </div>
@@ -83,28 +116,26 @@
                     </div>
                 </div>
                 <div class="cart-main-right-side">
-                    <div class="b-shipAdress">
-                        <h3>SHIPPING ADRESS</h3>
-                        <form class="b-shipAdress__form" action="#">
-                            <input class="b-shipAdress__input" type="text" name="country" value=""
+                    <div class="b-inputForm">
+                        <form class="b-inputForm__form" action="#">
+                            <h3 class="b-inputForm__headerCart">SHIPPING ADRESS</h3>
+                            <input class="b-inputForm__input" type="text" name="country" value=""
                                 placeholder="Bangladesh">
-                            <input class="b-shipAdress__input" type="text" name="state" value="" placeholder="State">
-                            <input class="b-shipAdress__input" type="text" name="postcode" value=""
+                            <input class="b-inputForm__input" type="text" name="state" value="" placeholder="State">
+                            <input class="b-inputForm__input" type="text" name="postcode" value=""
                                 placeholder="Postcode / Zip">
-                            <input class="b-shipAdress__submit" type="submit" value="GET A QUOTE">
+                            <input class="b-inputForm__submit" type="submit" value="GET A QUOTE">
                         </form>
                     </div>
-                    <div class="b-checkout checkout-margin-top">
+                    <div class="b-checkout b-checkout_marginTop">
                         <p class="b-checkout__subTotal">SUB TOTAL <span class="b-checkout__price">$900</span></p>
                         <p class="b-checkout__grandTotal">GRAND TOTAL <span
-                                class="b-checkout__price b-checkout__totalPrice">$900</span></p>
+                                class="b-checkout__price b-checkout__price_pink">$900</span></p>
                         <div class="b-checkout__strip"></div>
                         <a class="b-checkout__checkoutBtn" href="#">PROCEED TO CHECKOUT</a>
                     </div>
                 </div>
-
             </div>
-
         </main>
     </div>
     <footer class="footer">
@@ -137,6 +168,6 @@
                 </div>
             </div>
         </div>
-
     </footer>
+    <script src="script.js"></script>
 </body>

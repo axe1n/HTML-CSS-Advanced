@@ -23,10 +23,10 @@
 
     &__price {
         margin-left: 25px;
-    }
 
-    &__totalPrice {
-        color: #F16D7F;
+        &_pink {
+            color: #F16D7F;
+        }
     }
 
     &__strip {
@@ -44,5 +44,21 @@
         font-size: 16px;
         line-height: 19px;
         color: #FFFFFF;
+    }
+}
+
+@media (max-width: 1024px) {
+    .b-checkout {
+        &_marginTop {
+            margin-top: 38px;
+        }
+    }
+}
+
+@media (max-width: 667px) {
+    .b-checkout {
+        &_marginTop {
+            margin-top: 48px;
+        }
     }
 }
